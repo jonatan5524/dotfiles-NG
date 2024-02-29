@@ -40,6 +40,9 @@ done
 
 export ZSH=$HOME/.dotfiles
 
+# Install Nerd fonts
+bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)"
+
 # Set macOS defaults
 $ZSH/macos/set-defaults.sh
 
