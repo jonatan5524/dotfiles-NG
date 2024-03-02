@@ -11,7 +11,7 @@ for font_name in "${font_names[@]}"; do
 
 	curl -OL "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font_name.zip"
 	mkdir -p  "$HOME/.fonts"
-	unzip "$font_name.zip" -d "$HOME/.fonts/$font_name/"
+	unzip -o "$font_name.zip" -d "$HOME/.fonts/$font_name/"
 	fc-cache -fv
 	rm -rf "$font_name.zip"
 	

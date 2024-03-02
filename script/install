@@ -4,6 +4,10 @@
 
 set -e
 
+# Install software
+sudo dnf install zsh
+sudo dnf install vim
+
 cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively

@@ -1,3 +1,19 @@
+# My configurations on top of this awesome fork:
+
+my configurations:
+- tmux configured
+- vim configured
+- alacritty configured
+
+software installations:
+- Nerd font installed
+- Vscode installed
+- nvm installed
+- gvm installed
+- zsh installed
+- vim installed
+
+
 # holman does dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
