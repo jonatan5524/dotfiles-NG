@@ -7,6 +7,7 @@ set -e
 # Install software
 sudo dnf install zsh
 sudo dnf install vim
+sudo dnf install golang
 
 cd "$(dirname $0)"/..
 

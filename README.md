@@ -9,6 +9,7 @@ software installations:
 - Nerd font installed
 - Vscode installed
 - nvm installed
+- golang installed
 - gvm installed
 - zsh installed
 - vim installed
