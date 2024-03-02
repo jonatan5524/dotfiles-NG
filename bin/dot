@@ -40,13 +40,10 @@ done
 
 export ZSH=$HOME/.dotfiles
 
-# Install Nerd fonts
-$ZSH/fonts/install.sh
-
 # Upgrade homebrew
-# echo "› brew update"
-# brew update
+echo "› dnf update"
+sudo dnf update -y
 
 # Install software
-# echo "› script/install"
-# $ZSH/script/install
+echo "› script/install"
+$ZSH/script/install
