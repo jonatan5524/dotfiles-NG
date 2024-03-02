@@ -2,5 +2,5 @@
 
 if (( $+commands[go] ))
 then
-  export PATH="$PATH:/usr/local/go/bin"
+  export PATH="$PATH:/usr/local/go/bin:$GOBIN"
 fi
