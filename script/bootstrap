@@ -152,5 +152,17 @@ then
   fi
 fi
 
+# If we're on a Fedora
+if [[ -f /etc/redhat-release ]];
+then
+  info "installing dependencies"
+  if source bin/dot | while read -r data; do info "$data"; done
+  then
+    success "dependencies installed"
+  else
+    fail "error installing dependencies"
+  fi
+fi
+
 echo ''
 echo '  All installed!'
