@@ -12,6 +12,7 @@ software installations:
 - golang installed
 - zsh installed
 - vim installed
+- docker installed
 
 
 # holman does dotfiles
