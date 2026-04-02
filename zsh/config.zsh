@@ -39,8 +39,23 @@ bindkey "^K"      kill-whole-line                      # ctrl-k
 bindkey "^R"      history-incremental-search-backward  # ctrl-r
 bindkey "^A"      beginning-of-line                    # ctrl-a  
 bindkey "^E"      end-of-line                          # ctrl-e
-bindkey "[B"      history-search-forward               # down arrow
-bindkey "[A"      history-search-backward              # up arrow
+
+# Home and End keys
+bindkey "^[[H"    beginning-of-line                    # Standard Home
+bindkey "^[[F"    end-of-line                          # Standard End
+bindkey "^[[1~"   beginning-of-line                    # Alternate Home
+bindkey "^[[4~"   end-of-line                          # Alternate End
+bindkey "^[OH"    beginning-of-line                    # Alternate Home (vt100/xterm)
+bindkey "^[OF"    end-of-line                          # Alternate End (vt100/xterm)
+bindkey "\e[H"    beginning-of-line                    # Home key
+bindkey "\e[F"    end-of-line                          # End key
+
+# Arrow keys for history search
+bindkey "^[[B"      history-search-forward             # down arrow
+bindkey "^[[A"      history-search-backward            # up arrow
+bindkey "^[OB"      history-search-forward             # down arrow (alternate)
+bindkey "^[OA"      history-search-backward            # up arrow (alternate)
+
 bindkey "^D"      delete-char                          # ctrl-d
 bindkey "^F"      forward-char                         # ctrl-f
 bindkey "^B"      backward-char                        # ctrl-b
