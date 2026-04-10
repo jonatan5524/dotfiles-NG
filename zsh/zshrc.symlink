@@ -60,3 +60,14 @@ complete -o nospace -C /usr/bin/terraform terraform
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/jonatan5524/.bun/_bun" ] && source "/home/jonatan5524/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+alias claude-mem='/home/jonatan5524/.bun/bin/bun "/home/jonatan5524/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+export PATH="$HOME/bin/bin/:$HOME/go/bin:$PATH"
